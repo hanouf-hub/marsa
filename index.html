@@ -69,6 +69,13 @@
   .btn svg{width:16px;height:16px;fill:currentColor}
   .btn.disabled{background:var(--line);color:var(--muted);pointer-events:none}
 
+  .email{display:inline-block;font-size:13.5px;color:var(--navy-2);text-decoration:none;margin-top:2px;overflow-wrap:anywhere}
+  .email:hover{color:var(--orange)}
+  .actions{display:flex;gap:8px;flex:none}
+  .btn.ghost{background:#fff;color:var(--navy);border:1.5px solid var(--navy)}
+  .btn.ghost:hover{background:var(--orange);border-color:var(--orange);color:#fff}
+  .who{min-width:0}
+
   /* links */
   .links{display:grid;gap:12px}
   .link{
@@ -87,8 +94,9 @@
     .logo{width:200px}
     .tagline{font-size:17px}
     .card{padding:22px 18px}
-    .btn span{display:none}           /* icon-only LinkedIn button on small phones */
-    .btn{padding:10px 12px}
+    .member{flex-wrap:wrap}
+    .actions{width:100%;padding-left:60px}
+    .actions .btn{flex:1;justify-content:center}
   }
 </style>
 </head>
@@ -116,42 +124,57 @@
       <div class="member">
         <div class="who">
           <div class="avatar">AA</div>
-          <div><div class="name">Alhanouf Abuali</div><div class="role">Team Leader</div></div>
+          <div><div class="name">Alhanouf Abuali</div><div class="role">Team Leader</div>
+          <a class="email" href="mailto:aabuali0003@stu.kau.edu.sa">aabuali0003@stu.kau.edu.sa</a></div>
         </div>
-        <a class="btn" href="https://www.linkedin.com/in/ihanouf23" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
-          <span>LinkedIn</span>
-        </a>
+        <div class="actions">
+          <a class="btn ghost" href="mailto:aabuali0003@stu.kau.edu.sa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.2.5 7.8 6 7.8-6H4.2zM20 7.9l-7.4 5.7a1 1 0 0 1-1.2 0L4 7.9V18h16V7.9z"/></svg><span>Email</span></a>
+          <a class="btn" href="https://www.linkedin.com/in/ihanouf23" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span>LinkedIn</span></a>
+        </div>
       </div>
-
       <div class="member">
         <div class="who">
           <div class="avatar">LA</div>
-          <div><div class="name">Leoun Aldhaban</div><div class="role">Team Member</div></div>
+          <div><div class="name">Leoun Aldhaban</div><div class="role">Team Member</div>
+          <a class="email" href="mailto:laldhaban@stu.kau.edu.sa">laldhaban@stu.kau.edu.sa</a></div>
         </div>
-        <a class="btn" href="https://www.linkedin.com/in/leoun-aldhaban-b506b6299" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
-          <span>LinkedIn</span>
-        </a>
+        <div class="actions">
+          <a class="btn ghost" href="mailto:laldhaban@stu.kau.edu.sa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.2.5 7.8 6 7.8-6H4.2zM20 7.9l-7.4 5.7a1 1 0 0 1-1.2 0L4 7.9V18h16V7.9z"/></svg><span>Email</span></a>
+          <a class="btn" href="https://www.linkedin.com/in/leoun-aldhaban-b506b6299" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span>LinkedIn</span></a>
+        </div>
       </div>
-
       <div class="member">
         <div class="who">
           <div class="avatar">BH</div>
-          <div><div class="name">Bayan Hattari</div><div class="role">Team Member</div></div>
+          <div><div class="name">Bayan Hattari</div><div class="role">Team Member</div>
+          <a class="email" href="mailto:bhetari@stu.kau.edu.sa">bhetari@stu.kau.edu.sa</a></div>
         </div>
-        <!-- TODO: replace "#" with Bayan's LinkedIn URL and remove the word disabled -->
-        <a class="btn disabled" href="#" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
-          <span>LinkedIn</span>
-        </a>
+        <div class="actions">
+          <a class="btn ghost" href="mailto:bhetari@stu.kau.edu.sa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.2.5 7.8 6 7.8-6H4.2zM20 7.9l-7.4 5.7a1 1 0 0 1-1.2 0L4 7.9V18h16V7.9z"/></svg><span>Email</span></a>
+          <!-- TODO: add Bayan's LinkedIn URL here, copying the LinkedIn button from another member -->
+        </div>
       </div>
 
     </div>
   </section>
 
   <section class="card">
-    <h2><span class="num">03</span>Resources</h2>
+    <h2><span class="num">03</span>Supervisor</h2>
+    <div class="member">
+      <div class="who">
+        <div class="avatar">SA</div>
+        <div><div class="name">Dr. Sultanah Alshammari</div>
+        <div class="role">Supervisor</div>
+        <a class="email" href="mailto:sshammari@kau.edu.sa">sshammari@kau.edu.sa</a></div>
+      </div>
+      <div class="actions">
+        <a class="btn ghost" href="mailto:sshammari@kau.edu.sa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.2.5 7.8 6 7.8-6H4.2zM20 7.9l-7.4 5.7a1 1 0 0 1-1.2 0L4 7.9V18h16V7.9z"/></svg><span>Email</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2><span class="num">04</span>Resources</h2>
     <div class="links">
       <a class="link" href="https://docs.google.com/document/d/1ed7vVXvbwQJvZ0YKpoqpWkw28Ph5oJouxu1X0q5AbG8" target="_blank" rel="noopener">
         <div><strong>References</strong><small>Full list of sources cited in the poster</small></div>
